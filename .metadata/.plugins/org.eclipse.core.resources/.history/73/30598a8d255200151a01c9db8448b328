@@ -1,0 +1,12 @@
+package com.sapient.client.cui;
+
+public class Calendar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Calendar rightNow = Calendar.
+		
+		System.out.println(calendar.get);
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.sapient.util;
+
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
+
+public class Parser {
+	private static Parser parser;
+
+	private Parser() {
+
+	}
+
+	public static Parser getInstance() {
+		if (parser == null) {
+			Logger log = Logger.getLogger(Parser.class.getClass().getName());
+			BasicConfigurator.configure();
+			log.debug("Parser Object created");
+
+			parser = new Parser();
+		}
+		return parser;
+	}
+}

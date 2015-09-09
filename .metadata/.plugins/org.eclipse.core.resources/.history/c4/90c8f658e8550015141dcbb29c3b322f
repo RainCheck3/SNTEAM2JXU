@@ -1,0 +1,11 @@
+package com.sapient.observer;
+
+public class HexaObserver extends Observer {
+
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

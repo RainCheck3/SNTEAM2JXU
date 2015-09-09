@@ -1,0 +1,5 @@
+package com.sapient.facade;
+
+public class FacadePatternDemo {
+
+}

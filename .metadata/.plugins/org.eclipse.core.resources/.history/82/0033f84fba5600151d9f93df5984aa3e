@@ -1,0 +1,5 @@
+package com.sapient.composite;
+
+public class Employee {
+
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Sapient" default="execute">
+
+	<property name="build.dir" value="bin"/>
+
+	<target name="compile" depends="clean">
+		<javac srcdir="src" destdir="${build.dir}" includeantruntime="false"></javac>
+	</target>
+
+
+	<target name="clean">
+		<delete dir="${build.dir}"></delete>
+		<mkdir dir="${build.dir}"></mkdir>
+	</target>
+
+
+	<target name="execute" depends="compile">
+		<java classname="com.sapient.client.cui.MainApp" classpath="${build.dir}"></java>
+	</target>
+
+
+	<target name="createjar" depends="compile">
+		<jar destfile="dist/sapient.jar" basedir="${build.dir}" manifest="MANIFEST.mfst"></jar>
+	</target>
+
+</project>

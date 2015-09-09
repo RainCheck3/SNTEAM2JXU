@@ -1,0 +1,208 @@
+package com.sapient.client.test;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import com.sapient.client.payment.Payment;
+import com.sapient.client.shop.*;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class OrderDetailsTestCase {
+	static Order orderObjRef;
+	static OrderDetail orderDetail;
+	static Item itemObjRef;
+
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+		orderObjRef = new Order();
+		orderDetail = new OrderDetail();
+		itemObjRef = new Item();
+
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+		orderObjRef = null;
+		orderDetail = null;
+		itemObjRef = null;
+	}
+
+	@Test
+	public final void testInvalidQuantity() {
+
+			try {
+				orderDetail.setQuantity(0);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} catch (IllegalArgumentException e) {
+			e.printStackTrace();
+	
+	}
+
+	@Test
+	public final void testValidQuantity() {
+		Date date = new Date(1990, 12, 3);
+		orderObjRef.setDate(date);
+		assertEquals(1990, orderObjRef.getDate().getYear());
+		assertEquals(12, orderObjRef.getDate().getMonth());
+		assertEquals(3, orderObjRef.getDate().getDay());
+	}
+
+	@Test
+	public final void testInvalidTaxStatus() {
+		String status = null;
+
+		try {
+			orderObjRef.setStatus(status);
+		} catch (NullPointerException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Test
+	public final void testValidTaxStatus() {
+		String status = "Order placed";
+		orderObjRef.setStatus(status);
+		assertEquals("Order placed", orderObjRef.getStatus());
+	}
+
+	@Test
+	public final void testInvalidOrder() {
+		try {
+			orderObjRef.setCustomer(null);
+		} catch (NullPointerException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Test
+	public final void testValidOrder() {
+		orderObjRef.setCustomer(newCustomerObjRef);
+		assertTrue(orderObjRef.getCustomer() instanceof NewCustomer);
+	}
+
+	@Test
+	public final void testInvalidItem() {
+		try {
+			orderObjRef.setPayment(null);
+		} catch (NullPointerException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Test
+	public final void testValidItem() {
+		orderObjRef.setPayment(paymentObjRef);
+		assertTrue(orderObjRef.getPayment() instanceof Payment);
+	}
+
+	@Test
+	public final void testCalcSubTotal() {
+		// Create orderDetail objects
+		OrderDetail orderOne = new OrderDetail();
+		OrderDetail orderTwo = new OrderDetail();
+		OrderDetail orderThree = new OrderDetail();
+
+		// Create item objects
+		Item itemOne = new Item();
+		Item itemTwo = new Item();
+		Item itemThree = new Item();
+
+		orderDetailsList.clear();
+
+		try {
+			// Set item prices
+			itemOne.setPrice(100);
+			itemTwo.setPrice(500);
+			itemThree.setPrice(10);
+
+			// Associate item with orderDetails
+			orderOne.setItem(itemOne);
+			orderTwo.setItem(itemTwo);
+			orderThree.setItem(itemThree);
+
+			// Set orderDetail quantities
+			orderOne.setQuantity(1);
+			orderTwo.setQuantity(5);
+			orderThree.setQuantity(10);
+
+			// set orderDetail tax statuses
+			orderOne.setTaxStatus(0.2);
+			orderTwo.setTaxStatus(0);
+			orderThree.setTaxStatus(0.1);
+
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		// Add individual orders to list
+		orderDetailsList.add(orderOne);
+		orderDetailsList.add(orderTwo);
+		orderDetailsList.add(orderThree);
+
+		// Add list of orders to Order obj
+		orderObjRef.setOrderDetail(orderDetailsList);
+
+		assertEquals(30, orderObjRef.calcTax(), 0);
+	}
+
+	@Test
+	public final void testCalcWeight() {
+		// Create orderDetail objects
+		OrderDetail orderOne = new OrderDetail();
+		OrderDetail orderTwo = new OrderDetail();
+		OrderDetail orderThree = new OrderDetail();
+
+		// Create item objects
+		Item itemOne = new Item();
+		Item itemTwo = new Item();
+		Item itemThree = new Item();
+
+		orderDetailsList.clear();
+
+		try {
+			// Set item weights & shipping weights
+			itemOne.setWeight(8);
+			itemTwo.setWeight(450);
+			itemThree.setWeight(3);
+
+			itemOne.setShippingWeight(10);
+			itemTwo.setShippingWeight(500);
+			itemThree.setShippingWeight(5);
+
+			// Associate item with orderDetails
+			orderOne.setItem(itemOne);
+			orderTwo.setItem(itemTwo);
+			orderThree.setItem(itemThree);
+
+			// Set orderDetail quantities
+			orderOne.setQuantity(5);
+			orderTwo.setQuantity(1);
+			orderThree.setQuantity(6);
+
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		// Add individual orders to list
+		orderDetailsList.add(orderOne);
+		orderDetailsList.add(orderTwo);
+		orderDetailsList.add(orderThree);
+
+		// Add list of orders to Order obj
+		orderObjRef.setOrderDetail(orderDetailsList);
+
+		assertEquals(580, orderObjRef.calcTotalWeight(), 0);
+	}
+
+}

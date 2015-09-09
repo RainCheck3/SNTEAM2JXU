@@ -1,0 +1,18 @@
+package com.sapient.client.shop;
+
+public class OrderDetail {
+	private int quantity;
+	private double taxStatus;
+	private Order order;
+	private Item item;
+
+	
+	
+	public double calcSubTotal() {
+		return 0.0;
+	}
+	
+	public double calcWeight() {
+		return 0;
+	}
+}

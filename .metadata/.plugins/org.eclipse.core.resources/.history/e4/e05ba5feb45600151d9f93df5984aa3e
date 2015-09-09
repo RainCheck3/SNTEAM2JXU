@@ -1,0 +1,20 @@
+package com.sapient.prototype;
+
+import java.util.Hashtable;
+
+/**
+ * Create a class to get concrete classes from database and store them in a
+ * Hashtable.
+ * 
+ * @author jxu1
+ *
+ */
+public class ShapeCache {
+	private static Hashtable<String, Shape> shapeMap = new Hashtable<String, Shape>();
+
+	public static Shape getShape(String shapeID) {
+		Shape cachedShape = shapeMap.get(shapeId);
+		return (Shape) cachedShape.clone();
+	}
+
+}

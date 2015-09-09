@@ -1,5 +1,7 @@
 package com.sapient.client.cui;
 
+import javax.swing.JOptionPane;
+
 
 /*
 class Runner implements Runnable {
@@ -63,6 +65,8 @@ public class MainApp {
 		 * e.printStackTrace(); }
 		 */
 		new Runner();
+		
+		JOptionPane.showMessageDialog(null, "Hi");
 		
 		System.out.println("The End");
 

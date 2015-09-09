@@ -1,0 +1,5 @@
+package com.sapient.client.util;
+
+public class IsNumber {
+
+}

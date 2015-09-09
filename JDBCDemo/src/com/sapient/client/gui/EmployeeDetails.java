@@ -331,8 +331,11 @@ public class EmployeeDetails extends javax.swing.JFrame {
 					"hunter2");
 			// Execute Query
 			pStatement = dbConnection
-					.prepareStatement("SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME FROM EMPLOYEES WHERE SALARY=?", ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
-			
+					.prepareStatement(
+							"SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME FROM EMPLOYEES WHERE SALARY=?",
+							ResultSet.TYPE_SCROLL_INSENSITIVE,
+							ResultSet.CONCUR_READ_ONLY);
+
 			pStatement.setInt(1, Integer.parseInt(txtSalary.getText()));
 
 			this.result = pStatement.executeQuery();
@@ -359,7 +362,7 @@ public class EmployeeDetails extends javax.swing.JFrame {
 				txtEmployeeID.setText(this.result.getString(1));
 				txtFirstName.setText(this.result.getString(2));
 				txtLastName.setText(this.result.getString(3));
-			}else {
+			} else {
 				this.result.next();
 			}
 		} catch (SQLException e) {
@@ -495,6 +498,29 @@ public class EmployeeDetails extends javax.swing.JFrame {
 		}
 
 	}// GEN-LAST:event_btnFindIDActionPerformed
+
+	Connection dbConnection = null;
+	PreparedStatement pStatement = null;
+
+	public boolean getConnection() {
+		try {
+			DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
+
+			dbConnection = DriverManager.getConnection(
+					"jdbc:oracle:thin:@deltahiti31202:1521:XE", "Jiaju",
+					"hunter2");
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+
+	public void insert() {
+
+	}
 
 	private void btnInsertActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnInsertActionPerformed
 		Connection dbConnection = null;
