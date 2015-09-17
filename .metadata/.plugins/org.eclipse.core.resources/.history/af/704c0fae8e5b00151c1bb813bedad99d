@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Contacts</title>
+</head>
+<body>
+	<a href="home.html">Home</a>
+	<form>
+		First Name: <input type="text" name="firstName"/><br/>
+		Last Name: <input type="text" name="lastName"/><br/>
+		Cell Number: <input type="text" name="phoneNumber"/><br/>
+	</form>
+</body>
+</html>

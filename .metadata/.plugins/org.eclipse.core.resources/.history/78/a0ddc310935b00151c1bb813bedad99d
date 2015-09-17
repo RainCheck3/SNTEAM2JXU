@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Contacts</title>
+</head>
+<body>
+	<a href="home.html">Home</a>
+
+	<fieldset>
+		<legend>Add Contact:</legend>
+		First name:<br /> <input id ="fname" type="text" name="firstname"> <br />
+		Last name:<br /> <input id ="lname" type="text" name="lastname"> <br />
+		Cell number:<br /> <input id ="number" type="text" name="phonenumber" /><br />
+		<br /> <button id="submit">Submit</button>
+	</fieldset>
+</body>
+</html>

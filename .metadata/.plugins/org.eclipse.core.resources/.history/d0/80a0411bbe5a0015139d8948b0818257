@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div data-ng-app="sapientApp" data-ng-controller="sapientController">
+		<input type="text" data-ng-model="fname" /><br />
+		<input type="text" data-ng-model="lname" /><br /> 
+		Full Name: data-ng-bind=fullName()
+	</div>
+
+	<script type="text/javascript"
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script type="text/javascript" src="js/code2.js"></script>
+</body>
+</html>

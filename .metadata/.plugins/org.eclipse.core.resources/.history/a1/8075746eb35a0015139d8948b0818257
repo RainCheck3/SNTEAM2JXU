@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body data-ng-app="">
+
+<div>
+	<input type="text" data-ng-model="fname"/><br/>
+	<input type="text" value="{{fname}}"/><br/>
+</div> 
+<p data-ng-bind="fname"></p>
+<p>{{fname}}</p>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+</body>
+</html>

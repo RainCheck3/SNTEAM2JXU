@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<shiporder>
+	<orderperson>Jiaju</orderperson>
+	<shipto>
+		<name>Sunny</name>
+		<address>5461 Hartfield Ct SE</address>
+		<city>Ada</city>
+		<country>US</country>
+	</shipto>
+	<item>
+	
+	</item>
+	
+
+
+
+
+</shiporder>

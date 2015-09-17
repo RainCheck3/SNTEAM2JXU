@@ -1,7 +1,7 @@
 content_assist_completion_replacement_background=52,57,61
 content_assist_completion_replacement_foreground=238,238,238
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.sql.Driver"><rhs name\="oracle.jdbc.driver.OracleDriver"/></lhs><lhs name\="org.apache.log4j.Priority"><rhs name\="org.apache.log4j.Level"/></lhs><lhs name\="org.apache.log4j.Level"><rhs name\="org.apache.log4j.Level"/></lhs><lhs name\="com.sapient.iterator.Container"><rhs name\="com.sapient.iterator.NameRepository"/></lhs><lhs name\="com.sapient.iterator.NameRepository"><rhs name\="com.sapient.iterator.NameRepository"/></lhs></history>
-content_assist_number_of_computers=13
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.sql.Driver"><rhs name\="oracle.jdbc.driver.OracleDriver"/></lhs><lhs name\="org.apache.log4j.Priority"><rhs name\="org.apache.log4j.Level"/></lhs><lhs name\="org.apache.log4j.Level"><rhs name\="org.apache.log4j.Level"/></lhs><lhs name\="com.sapient.iterator.Container"><rhs name\="com.sapient.iterator.NameRepository"/></lhs><lhs name\="com.sapient.iterator.NameRepository"><rhs name\="com.sapient.iterator.NameRepository"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.util.Date"/></lhs><lhs name\="java.util.Date"><rhs name\="java.util.Date"/></lhs></history>
+content_assist_number_of_computers=14
 content_assist_parameters_background=52,57,61
 content_assist_parameters_foreground=238,238,238
 content_assist_proposals_background=52,57,61
@@ -22,6 +22,7 @@ java_operator=230,230,250
 java_single_line_comment=98,98,98
 java_string=23,198,163
 matchingBracketsColor=102,112,125
+org.eclipse.jdt.internal.ui.navigator.layout=2
 org.eclipse.jdt.ui.editor.tab.width=
 org.eclipse.jdt.ui.formatterprofiles.version=12
 org.eclipse.jdt.ui.javadoclocations.migrated=true

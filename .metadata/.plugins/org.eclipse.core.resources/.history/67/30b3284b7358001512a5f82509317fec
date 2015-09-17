@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function ajaxFunction() {
+		var xmlHttp;
+		try {
+			//Firefox, Opera 8.0, Safari
+			xmlHttp = new XMLHttpRequest();
+		} catch (e) {
+			//Internet Explorer
+			try {
+				xmlHttp = new ActiveXObject("Msxm12.XMLHTTP");
+			} catch (e) {
+				try {
+					xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+				} catch (e) {
+					alert("Your browser does not support AJAX!");
+					return false
+				}
+			}
+		}
+		xmlHttp.onreadystatechange = function() {
+			if (xmlHttp.readyState == 4) {
+				document.getElementById("divHello").innerHTML = xmlHttp.responseText;
+			}
+		}
+		xmlHttp.open("GET", "greet?firstname=" + document.regfrm.fname.value,
+				true);
+		xmlHttp.send(null);
+	}
+</script>
+</head>
+<body>
+
+	<form name="regfrm">
+		First name:<br /> <input type="text" name="fname"
+			onblur="ajaxFunction()"> <br /> Last name:<br /> <input
+			type="text" name="lastname">
+	</form>
+	<div id="divHello">Answer here</div>
+
+</body>
+</html>

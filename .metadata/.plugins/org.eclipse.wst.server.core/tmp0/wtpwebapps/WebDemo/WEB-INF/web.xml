@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>WebDemo</display-name>
+  <welcome-file-list>
+    <welcome-file>sapient.html</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>GreetingServlet</display-name>
+    <servlet-name>GreetingServlet</servlet-name>
+    <servlet-class>com.sapient.view.GreetingServlet</servlet-class>
+    <init-param>
+    	<param-name>Hobbies</param-name>
+    	<param-value>Sports, Music</param-value>
+    </init-param>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GreetingServlet</servlet-name>
+    <url-pattern>/greet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>countServlet</display-name>
+    <servlet-name>countServlet</servlet-name>
+    <servlet-class>com.sapient.count.countServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>countServlet</servlet-name>
+    <url-pattern>/count</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>inputServlet</display-name>
+    <servlet-name>inputServlet</servlet-name>
+    <servlet-class>com.sapient.input.inputServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>inputServlet</servlet-name>
+    <url-pattern>/input</url-pattern>
+  </servlet-mapping>
+  <context-param>
+  	<param-name>True Love</param-name>
+  	<param-value>Taylor Swift</param-value>
+  </context-param>
+</web-app>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<a href="html/static/login.html">Login</a>
+	<h1>What Can JavaScript Do?</h1>
+
+	<p id="demo">JavaScript can change HTML content.</p>
+
+	<button type="button"
+		onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">
+		Click Me!</button>
+
+	<p>Click the button to display the date.</p>
+
+	<button onclick="displayDate()">The time is?</button>
+	<script>
+		var cars = [ "Saab", "Volvo", "BMW" ];
+		document.getElementById("demo").innerHTML = cars;
+	</script>
+
+
+	<script type="text/javascript" src="js/code.js"></script>
+
+	<script>
+		function employee() {
+			this.firstName = 'Jiaju';
+			this.lastName = 'Xu';
+			this.netSalary = function() {
+				return (this.firstName + ' ' + this.lastName);
+			}
+		}
+		var emp = new employee();
+		alert(emp.netSalary());
+	</script>
+	<p id="demo1"></p>
+	<script>
+		function person(firstName, lastName, age, eyeColor) {
+			this.firstName = firstName;
+			this.lastName = lastName;
+			this.age = age;
+			this.eyeColor = eyeColor;
+			this.changeName = function(name) {
+				this.lastName = name;
+			}
+		}
+		var myMother = new person("Sally", "Rally", 48, "green");
+		myMother.changeName("Doe");
+		document.getElementById("demo1").innerHTML = "My mother's last name is "
+				+ myMother.lastName;
+	</script>
+</body>
+</html>

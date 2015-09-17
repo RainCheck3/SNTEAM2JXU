@@ -1,0 +1,1 @@
+var submitRef = document.getElementById("submit");

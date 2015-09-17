@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shiporder orderid="" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="shiporder.xsd">
+  <orderperson>Jiaju</orderperson>
+  <shipto>
+    <name>Sunny</name>
+    <address>5461 Hartfield Ct SE</address>
+    <city>Ada</city>
+    <country>US</country>
+  </shipto>
+  <shipto>
+    <name>Sunny</name>
+    <address>5461 Hartfield Ct SE</address>
+    <city>Ada</city>
+    <country>US</country>
+  </shipto>
+  <item>
+    <title>T-shirt</title>
+    <quantity>2</quantity>
+    <price>12.5</price>
+  </item>
+    <item>
+    <title>Shorts</title>
+    <quantity>1</quantity>
+    <price>20</price>
+  </item>
+  
+</shiporder>

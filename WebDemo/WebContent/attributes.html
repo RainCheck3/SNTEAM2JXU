@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="">
+		First name:<br> <input type="text" name="firstname" value="John">
+		<br> Last name:<br> <input type="text" name="lastname">
+	</form>
+	<p>Readonly</p>
+	<form action="">
+		First name:<br> <input type="text" name="firstname" value="John"
+			readonly> <br> Last name:<br> <input type="text"
+			name="lastname">
+	</form>
+	<p>disabled</p>
+	<form action="">
+		First name:<br> <input type="text" name="firstname" value="John"
+			disabled> <br> Last name:<br> <input type="text"
+			name="lastname">
+	</form>
+	<form action="">
+		First name:<br> <input type="text" name="firstname" value="John"
+			size="40"> <br> Last name:<br> <input type="text"
+			name="lastname">
+	</form>
+	<form action="action_page.php" autocomplete="on">
+		First name:<input type="text" name="fname"><br> Last
+		name: <input type="text" name="lname"><br> E-mail: <input
+			type="email" name="email" autocomplete="off"><br> <input
+			type="submit">
+	</form>
+	novalidate
+	<form action="action_page.php" novalidate>
+		E-mail: <input type="email" name="user_email"> <input
+			type="submit">
+	</form>
+	autofocus First name:
+	<input type="text" name="fname" autofocus>
+	<br/> minmax 
+	Enter a date
+	before 1980-01-01:
+	<input type="date" name="bday" max="1979-12-31"> Enter a date
+	after 2000-01-01:
+	<input type="date" name="bday" min="2000-01-02"> Quantity
+	(between 1 and 5):
+	<input type="number" name="quantity" min="1" max="5">
+	<br/>
+	Select images: <input type="file" name="img" multiple>
+	
+</body>
+</html>

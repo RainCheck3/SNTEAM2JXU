@@ -1,0 +1,10 @@
+function contact() {
+	this.firstName;
+	this.lastName;
+	this.phoneNumber;
+};
+
+var submitRef = document.getElementById("submit");
+var eventHandler = function() {
+
+};

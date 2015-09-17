@@ -1,4 +1,6 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
 eclipse.preferences.version=1
+fontPropagated=true
 java_bracket=249,250,244
 java_comment_task_tag=154,140,124
 java_default=217,232,247
@@ -12,6 +14,14 @@ java_multi_line_comment=98,98,98
 java_operator=230,230,250
 java_single_line_comment=98,98,98
 java_string=23,198,163
+org.eclipse.jface.textfont=1|Consolas|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
+org.eclipse.wst.jsdt.internal.ui.navigator.layout=1
+org.eclipse.wst.jsdt.ui.editor.tab.width=
+org.eclipse.wst.jsdt.ui.formatterprofiles.version=11
+org.eclipse.wst.jsdt.ui.javadoclocations.migrated=true
+org.eclipse.wst.jsdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.wst.jsdt.ui.text.templates_migrated=true
+proposalOrderMigrated=true
 semanticHighlighting.deprecatedMember.color=171,31,54
 semanticHighlighting.localVariable.color=255,191,38
 semanticHighlighting.localVariable.enabled=true
@@ -25,4 +35,7 @@ semanticHighlighting.methodDeclarationName.color=13,209,64
 semanticHighlighting.methodDeclarationName.enabled=true
 semanticHighlighting.parameterVariable.color=121,171,255
 semanticHighlighting.parameterVariable.enabled=true
+tabWidthPropagated=true
 tagName=167,236,33
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

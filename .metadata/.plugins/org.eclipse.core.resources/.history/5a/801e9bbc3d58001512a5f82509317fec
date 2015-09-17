@@ -1,0 +1,14 @@
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+    
+    function employee() {
+		this.firstName = 'Jiaju';
+		this.lastName = 'Xu';
+		this.netSalary = function() {
+			return (this.firstName + ' ' + this.lastName);
+		}
+	}
+    
+	var emp = new employee();
+	alert(emp.netSalary());
+}

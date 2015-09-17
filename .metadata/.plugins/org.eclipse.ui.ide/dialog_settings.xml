@@ -12,4 +12,7 @@
 			<item value=""/>
 		</list>
 	</section>
+	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
+		<item value="D:\Trainee" key="OUTSIDE_LOCATION"/>
+	</section>
 </section>

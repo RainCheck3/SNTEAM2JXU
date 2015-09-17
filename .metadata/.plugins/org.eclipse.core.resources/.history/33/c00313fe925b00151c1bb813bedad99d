@@ -1,0 +1,17 @@
+function contact() {
+	this.firstName;
+	this.lastName;
+	this.phoneNumber;
+};
+
+var submitRef = document.getElementById("submit");
+var eventHandler = function() {
+	var newContact = new contact();
+	newContact.firstName = $("#fname");
+	newContact.lastName= $("#lname");
+	newContact.phoneNumber = $("#number")
+};
+
+submitRef.addEventListener(click, eventHandler);
+
+

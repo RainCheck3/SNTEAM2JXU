@@ -1,0 +1,36 @@
+var cars = [ "Saab", "Volvo", "BMW" ];
+document.getElementById("demo").innerHTML = cars;
+
+function displayDate() {
+	document.getElementById("demo").innerHTML = Date();
+}
+
+function employee() {
+	this.firstName = 'Jiaju';
+	this.lastName = 'Xu';
+	this.netSalary = function() {
+		return (this.firstName + ' ' + this.lastName);
+	};
+}
+
+var emp = new employee();
+alert(emp.netSalary());
+
+var pokemon = {
+	firstName : 'Ash',
+	lastName : 'Ketchum',
+	goPikachu : function() {
+		alert('Pikachuuuuuuuuuuu');
+	}
+};
+pokemon.goPikachu();
+
+
+var btnClickRef = document.getElementById('btnClick');
+btnClickRef.addEventListener("click", eventHandler);
+
+var eventHandler = function() {
+	employee.firstName = 'Kate';
+	alert(employee.firstName);
+	employee.netSalary();
+};

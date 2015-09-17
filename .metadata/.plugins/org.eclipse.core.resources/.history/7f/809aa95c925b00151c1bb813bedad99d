@@ -1,0 +1,19 @@
+function contact() {
+	this.firstName;
+	this.lastName;
+	this.phoneNumber;
+}
+
+function employee() {
+	this.firstName = 'Jiaju';
+	this.lastName = 'Xu';
+	this.netSalary = function() {
+		return this.firstName + ' '  + this.lastName;
+	};
+}
+
+
+var submitRef = document.getElementById("submit");
+var eventHandler = function() {
+
+};

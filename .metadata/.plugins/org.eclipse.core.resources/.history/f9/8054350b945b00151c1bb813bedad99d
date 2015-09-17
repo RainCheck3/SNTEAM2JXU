@@ -1,0 +1,19 @@
+function contact() {
+	this.firstName;
+	this.lastName;
+	this.phoneNumber;
+};
+
+var submitRef = document.getElementById("submitbtn");
+var eventHandler = function() {
+	var newContact = new contact();
+	newContact.firstName = $("#fname");
+	newContact.lastName= $("#lname");
+	newContact.phoneNumber = $("#number");
+	//Now post to server
+	Alert("Posting to server: ");
+};
+
+submitRef.addEventListener("onclick", eventHandler);
+
+//

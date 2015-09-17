@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link type="text/css" href="../../css/style.css" rel="stylesheet">
+<script type="text/javascript">
+	function replaceMessage() {
+		document.getElementById('message').innerHTML = 'Hello';
+	}
+	function access(func) {
+		func();
+	}
+</script>
+</head>
+<body>
+	<a href="../..">Home</a>
+	<a href="mailto:jxu@sapient.com">Email us</a>
+	<br />
+	<hr />
+	<a href="../../lists.html">List practice</a>
+	<a href="../../forms.html">Form practice</a>
+	<a href="../../attributes.html">Attribute practice</a>
+	<a href="../../javascript.html">Javascript practice</a>
+	<a href="../../Registration.html">Registration</a>
+	<a href="../../jquery.html">jQuery</a>
+	<a href="../../angularjs.html">angularjs</a>
+
+
+	<p id="p1">
+		Please <i>Login</i>
+	</p>
+	<p class="loginpagetextcolor">Sapient ID and password</p>
+
+	<p onmouseover="access(replaceMessage)">Sapient</p>
+	<form>
+		<fieldset>
+			<legend>Personalia:</legend>
+			Sapient ID: <input type="text" size="30"><br> Password:
+			<input type="text" size="30"><br> Date of birth: <input
+				type="text" size="10">
+		</fieldset>
+	</form>
+	<table class="loginpagetextcolor">
+		<tr>
+			<th>City</th>
+			<th>Country</th>
+		</tr>
+		<tr>
+			<td>Gurgaon</td>
+			<td>India</td>
+		</tr>
+		<tr>
+			<td>Chicago</td>
+			<td>USA</td>
+		</tr>
+	</table>
+	<img alt="Tate"
+		src="http://media.mlive.com/wolverines_impact/photo/9189709-large.jpg">
+	<div style="width: 200px; height: 300px" id="message">asdfl;klja
+		aflsdjjklasdf lasdjasfkd klsdfsd;l</div>
+</body>
+</html>

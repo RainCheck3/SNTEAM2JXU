@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+</head>
+<body>
+<a href="profile.html">Profile</a>
+<a href="schedule.html">Schedule</a>
+<a href="result.html">Result</a>
+<a href="contacts.html">Contacts</a>
+<a href="blogs.html">Blogs</a>
+<a href="logout.html">Log out</a>
+</body>
+</html>

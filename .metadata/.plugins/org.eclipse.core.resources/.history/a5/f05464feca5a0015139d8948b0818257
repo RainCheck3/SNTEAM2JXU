@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<?php
+header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json; charset=UTF-8");
+?>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+table,th,td {
+	border: 1px solid grey;
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+table tr:nth-child(odd) {
+	background-color: #f1f1f1;
+}
+
+table tr:nth-child(even) {
+	background-color: #ffffff;
+}
+</style>
+<body ng-app="mainApp">
+
+	<div data-ng-controller="sapientController">
+		<input type="text" data-ng-model="fname" /><br /> <input type="text"
+			data-ng-model="lname" /><br /> Full Name: <span
+			data-ng-bind="fullName()"></span>
+	</div>
+
+	<script type="text/javascript"
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script type="text/javascript" src="js/code2.js"></script>
+
+
+
+
+
+
+
+
+	<div data-ng-controller="customersCtrl">
+
+		<table>
+			<tr ng-repeat="x in names | orderBy : 'Country'">
+				<td>{{ x.Name }}</td>
+				<td>{{ x.Country }}</td>
+			</tr>
+		</table>
+
+	</div>
+
+	<script>
+		var app = angular.module('myApp', []);
+		app.controller('customersCtrl', function($scope, $http) {
+			$http.get("http://www.w3schools.com/angular/customers.php")
+					.success(function(response) {
+						alert("Success");
+						$scope.names = response.records;
+					});
+		});
+	</script>
+</body>
+</html>
