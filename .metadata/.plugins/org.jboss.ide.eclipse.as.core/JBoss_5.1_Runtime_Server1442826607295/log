@@ -1,0 +1,226 @@
+!SESSION 2015-09-21 14:33:50.541 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 14:40:16.843
+!MESSAGE Module JSPDemo published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-09-21 14:40:17.904
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2015-09-21 14:41:24.730
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-09-21 14:41:28.608
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-09-21 14:41:45.115
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 14:44:44.192
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 14:44:52.416
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 14:44:58.403
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 14:45:22.279
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 14:45:58.818
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 14:46:01.122
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 14:46:08.228
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 14:47:32.119
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2015-09-21 14:47:56.370
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2015-09-21 14:47:58.682
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-09-21 14:47:59.727
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-09-21 14:48:16.125
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 14:49:17.411
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 14:51:21.267
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 14:53:13.601
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 14:53:28.457
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 14:53:46.408
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 14:54:27.359
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 14:55:33.344
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 14:59:23.652
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 14:59:36.202
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:00:08.713
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:00:30.873
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:04:01.586
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:06:00.331
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:08:04.413
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:08:20.680
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:08:32.303
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:08:39.756
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:08:47.367
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:22:35.314
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:23:11.113
+!MESSAGE 2 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:23:52.428
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:24:23.653
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:24:38.637
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:24:50.638
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:24:55.849
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:28:20.991
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:29:26.548
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:29:41.876
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:29:50.055
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:30:12.439
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:30:41.007
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:30:59.516
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:31:51.613
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:32:04.311
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:32:21.063
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:32:59.639
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:33:03.651
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:34:30.286
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:34:34.143
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:34:36.844
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:35:30.067
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2015-09-21 15:35:45.491
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2015-09-21 15:35:47.820
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-09-21 15:35:48.865
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-09-21 15:36:04.813
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:36:42.046
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:36:48.010
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:38:23.586
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:40:20.212
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-09-21 15:40:29.010
+!MESSAGE 1 files modified in module JSPDemo
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2015-09-21 15:40:48.432
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2015-09-21 15:40:50.712
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-09-21 15:40:51.757
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-09-21 15:41:08.040
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2015-09-21 15:43:03.344
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2015-09-21 15:43:05.672
+!MESSAGE Server processes have been terminated.

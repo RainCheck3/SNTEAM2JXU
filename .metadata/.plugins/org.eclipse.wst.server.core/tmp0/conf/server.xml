@@ -60,7 +60,7 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL HTTP/1.1 Connector on port 8080
     -->
-    <Connector connectionTimeout="20000" port="80" protocol="HTTP/1.1" redirectPort="8443"/>
+    <Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/>
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -131,7 +131,7 @@
                prefix="localhost_access_log." suffix=".txt" pattern="common" resolveHosts="false"/>
         -->
 
-      <Context docBase="D:\SNTEAM2JXU\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\SNTEAM2JXU\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\WebDemo" path="/WebDemo" reloadable="true" source="org.eclipse.jst.jee.server:WebDemo"/><Context docBase="D:\SNTEAM2JXU\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Trainee" path="/Trainee" reloadable="true" source="org.eclipse.jst.jee.server:Trainee"/></Host>
+      <Context docBase="D:\SNTEAM2JXU\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\SNTEAM2JXU\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\RESTfulDemo" path="/RESTfulDemo" reloadable="true" source="org.eclipse.jst.jee.server:RESTfulDemo"/></Host>
     </Engine>
   </Service>
 </Server>

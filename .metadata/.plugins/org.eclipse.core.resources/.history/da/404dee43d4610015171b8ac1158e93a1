@@ -1,0 +1,8 @@
+package com.sapient.dao;
+
+import java.util.List;
+
+public interface BalloonDao {
+	public List<Balloon> getInventory();
+	
+}
