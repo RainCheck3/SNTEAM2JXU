@@ -1,0 +1,20 @@
+package com.sapient.client.cui;
+
+import org.apache.log4j.Logger;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Logger log = Logger.getLogger(MainApp.class.getName());
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+		log.info("Spring IoC instantiated");
+		//Authentication authentication = context.getBean("authbean");
+		log.info("Authenticator obtained");
+	
+	}
+
+}

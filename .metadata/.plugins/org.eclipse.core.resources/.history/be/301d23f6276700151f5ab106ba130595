@@ -1,0 +1,13 @@
+package com.sapient.beans.security;
+
+public class SecureAuthentication implements Authentication {
+
+	@Override
+	public boolean validateCredentials(String firstName, String lastName) {
+		if (firstName.equalsIgnoreCase("jiaju") && lastName.equals("Xu")) {
+			return true;
+		}
+		return false;
+	}
+
+}

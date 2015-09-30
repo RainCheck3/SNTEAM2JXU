@@ -1,0 +1,10 @@
+
+$("#updbtn").click(function() {
+	$.ajax({
+		url : "rest/date/upd",
+		data : {year:$("#yr"), month:$("#mn"), day:$("#dy")},
+		success(function() {
+			$("#updateStatus").html(result));
+		})
+	})
+})

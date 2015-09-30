@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+
+	<form action="rest/date/add" method="post">
+		<input type="text" name="year" placeholder="Year" /><br /> <input
+			type="text" name="month" placeholder="Month" /><br /> <input
+			type="text" name="day" placeholder="Days" /><br /> <input
+			type="submit" value="Go" />
+	</form>
+	<input type="button" name="updbtn" value="Update"/>
+	<div id="updateStatus"></div>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/code.js"></script>
+
+		
+
+</body>
+</html>

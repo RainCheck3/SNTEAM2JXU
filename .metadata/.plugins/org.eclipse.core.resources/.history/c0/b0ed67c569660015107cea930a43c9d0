@@ -1,0 +1,14 @@
+$("#updbtn").click(function() {
+	$.ajax({
+		url : "rest/date/upd",
+		type : "PUT",
+		data : {
+			year : $("#yr"),
+			month : $("#mn"),
+			day : $("#dy")
+		},
+		success : function(result) {
+			$("#updateStatus").html(result);
+		}
+	});
+});

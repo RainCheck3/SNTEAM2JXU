@@ -1,8 +1,10 @@
 package com.sapient.rest;
 
+import javax.ws.rs.DELETE;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -27,7 +29,7 @@ public class DataService {
 			@PathParam("month") int month, @PathParam("day") int day) {
 		return "<b>" + day + ":" + month + ":" + year + "</b>";
 	}
-	
+
 	@POST
 	@Path("/add")
 	@Produces(MediaType.TEXT_HTML)
@@ -35,4 +37,21 @@ public class DataService {
 			@FormParam("month") int month, @FormParam("day") int day) {
 		return "Date : " + day + ":" + month + ":" + year;
 	}
+
+	@PUT
+	@Path("/upd")
+	@Produces(MediaType.TEXT_HTML)
+	public String updDate(@FormParam("year") int year,
+			@FormParam("month") int month, @FormParam("day") int day) {
+		return year + ":" + month + ":" + day + " Updated";
+	}
+
+	@DELETE
+	@Path("/del")
+	@Produces(MediaType.TEXT_HTML)
+	public String delDate(@FormParam("year") int year,
+			@FormParam("month") int month, @FormParam("day") int day) {
+		return year + ":" + month + ":" + day + " Deleted";
+	}
+
 }

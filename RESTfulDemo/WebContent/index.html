@@ -7,11 +7,20 @@
 <body>
 
 	<form action="rest/date/add" method="post">
-		<input type="text" name="year" placeholder="Year" /><br /> <input
-			type="text" name="month" placeholder="Month" /><br /> <input
-			type="text" name="day" placeholder="Days" /><br /> <input
+		<input type="text" name="year" placeholder="Year" id="yr" /><br /> <input
+			type="text" name="month" placeholder="Month" id="mn"/><br /> <input
+			type="text" name="day" placeholder="Days" id="dy"/><br /> <input
 			type="submit" value="Go" />
 	</form>
+	<input type="button" id="updbtn" value="Update"/>
+	<input type="button" id="delbtn" value="Delete"/>
+	<div id="updateStatus"></div>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/code.js"></script>
+
+		
 
 </body>
 </html>

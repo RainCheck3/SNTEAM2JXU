@@ -1,0 +1,11 @@
+package com.sapient.beans.security;
+
+public class BasicAuthentication implements Authentication {
+
+	@Override
+	public boolean validateCredentials(String firstName, String lastName) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

@@ -131,7 +131,7 @@
                prefix="localhost_access_log." suffix=".txt" pattern="common" resolveHosts="false"/>
         -->
 
-      <Context docBase="RESTfulDemo" path="/RESTfulDemo" reloadable="true" source="org.eclipse.jst.jee.server:RESTfulDemo"/></Host>
+      <Context docBase="RESTfulDemo" path="/RESTfulDemo" reloadable="true" source="org.eclipse.jst.jee.server:RESTfulDemo"/><Context docBase="Balloon" path="/Balloon" reloadable="true" source="org.eclipse.jst.jee.server:Balloon"/></Host>
     </Engine>
   </Service>
 </Server>
